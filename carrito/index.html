@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda Rosada</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <h1>Tienda Kawaii</h1>
+        <button id="toggle-theme">Cambiar Tema</button>
+    </div>
+
+    <div class="layout">
+        <!-- El carrito ahora está a la izquierda para cambiar el diseño -->
+        <aside class="carrito-box">
+            <h2>Tu Carrito</h2>
+            <button id="vaciar">Vaciar Todo</button>
+            <div id="lista"></div>
+            <h3>Total: $<span id="total">0</span></h3>
+        </aside>
+
+        <!-- Productos a la derecha -->
+        <main class="productos-box">
+            <div class="card">
+                <h3>Gato de Peluche</h3>
+                <p>$15</p>
+                <button class="add-btn" data-id="1" data-nombre="Gato de Peluche" data-precio="15">Comprar</button>
+            </div>
+            <div class="card">
+                <h3>Taza Bonita</h3>
+                <p>$10</p>
+                <button class="add-btn" data-id="2" data-nombre="Taza Bonita" data-precio="10">Comprar</button>
+            </div>
+        </main>
+    </div>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
